@@ -51,8 +51,8 @@ const PersianDate = () => {
           <span className="d-block text-center">ساعت {time}</span>
         </div>
       ) : (
-        <div style={{ color: "#ff9300" }} class="spinner-grow" role="status">
-          <span class="visually-hidden">Loading...</span>
+        <div style={{ color: "#ff9300" }} className="spinner-grow" role="status">
+          <span className="visually-hidden">Loading...</span>
         </div>
       )}
     </>

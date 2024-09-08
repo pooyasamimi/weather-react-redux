@@ -63,26 +63,26 @@ body {
 }
 
 .back_cold {
-  background: url(/assets/images/weather/cold.jpg);
+  background: url(../images/weather/cold.jpg);
 }
 
 .back_warm {
-  background: url(/assets/images/weather/warm.jpg);
+  background: url(../images/weather/warm.jpg);
 }
 
 .back_usual {
-  background: url(/assets/images/weather/usual.jpg);
+  background: url(../images/weather/usual.jpg);
 }
 
 @media (max-width: 600px) {
   .back_cold {
-    background: url(/assets/images/weather/cold-mini.jpg);
+    background: url(../images/weather/cold-mini.jpg);
   }
   .back_warm {
-    background: url(/assets/images/weather/warm-mini.jpg);
+    background: url(../images/weather/warm-mini.jpg);
   }
   .back_usual {
-    background: url(/assets/images/weather/usual-mini.jpg);
+    background: url(../images/weather/usual-mini.jpg);
   }
 }
 

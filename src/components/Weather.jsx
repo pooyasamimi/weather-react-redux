@@ -115,10 +115,10 @@ const Weather = () => {
           {loading ? (
             <div
               style={{ color: "#ff9300" }}
-              class="spinner-grow"
+              className="spinner-grow"
               role="status"
             >
-              <span class="visually-hidden">Loading...</span>
+              <span className="visually-hidden">Loading...</span>
             </div>
           ) : !error ? (
             toast.info("لطفا نام شهر را وارد و بعد اینتر بزنید", {
