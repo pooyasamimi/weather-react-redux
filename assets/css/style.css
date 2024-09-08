@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "BYekan";
+  src: url("../fonts/BYekan-webfont.eot") format("eot"),
+    url("../fonts/BYekan-webfont.woff") format("woff"),
+    url("../fonts/BYekan-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+#root {
+  height: 100%;
+}
+body {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(9, 185, 103);
+  background: linear-gradient(
+    90deg,
+    rgb(9, 187, 104) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    90deg,
+    rgb(7, 190, 105) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+}
+
+* {
+  font-family: BYekan;
+  direction: rtl;
+  text-align: right;
+}
+
+.dir_ltr {
+  direction: ltr !important;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.transition_200 {
+  transition: all 200ms ease;
+}
+.text_hover_shadow:hover {
+  text-shadow: 0 0 3px black;
+}
+.text_shdow {
+  text-shadow: 0 0 8px rgb(14, 215, 241);
+}
+
+.lathin_text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.h_fit {
+  height: fit-content;
+}
+
+.back_cold {
+  background: url(/assets/images/weather/cold.jpg);
+}
+
+.back_warm {
+  background: url(/assets/images/weather/warm.jpg);
+}
+
+.back_usual {
+  background: url(/assets/images/weather/usual.jpg);
+}
+
+@media (max-width: 600px) {
+  .back_cold {
+    background: url(/assets/images/weather/cold-mini.jpg);
+  }
+  .back_warm {
+    background: url(/assets/images/weather/warm-mini.jpg);
+  }
+  .back_usual {
+    background: url(/assets/images/weather/usual-mini.jpg);
+  }
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.temprature_box {
+  direction: ltr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(195, 224, 209, 0.4),
+    rgba(0, 209, 255, 0.4)
+  );
+  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  transition: all 200ms linear;
+  text-shadow: 0 0 2px black;
+  font-size: 4rem;
+}
+
+.temprature_box span {
+  position: relative;
+  top: -9px;
+  font-size: 5rem;
+}
+
+.search_input {
+  background: transparent;
+  border: transparent;
+  outline: unset;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 0px #808080a6;
+  padding: 0.5rem;
+}
+
+.back_cold .text_color,
+.back_cold .placeholder_color::placeholder {
+  color: #ff9300;
+  text-shadow: #FC0 1px 0 10px;
+}
+.back_warm .text_color,
+.back_warm .placeholder_color::placeholder {
+  color: #eed284;
+  text-shadow: #FC0 1px 0 10px;
+
+}
+.back_usual .text_color,
+.back_usual .placeholder_color::placeholder {
+  color: #175006;
+  text-shadow: #FC0 1px 0 10px;
+}
+
+.placeholder::placeholder {
+  font-size: 23px;
+}
