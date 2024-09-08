@@ -27,6 +27,7 @@ body {
     rgb(7, 190, 105) 0%,
     hsla(186, 100%, 69%, 1) 100%
   );
+  background-color: red !important;
 }
 
 * {
