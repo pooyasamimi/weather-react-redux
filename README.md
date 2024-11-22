@@ -8,6 +8,12 @@
 
 
 
-> If downloaded source code
-in the project directory, you can run: `npm start`
+
+**install**
+---
+`npm install`
+
+**run**
+---
+`npm start`
 
